@@ -12,10 +12,9 @@ from PyQt6.QtWidgets import (
     QDialog, QDialogButtonBox, QFormLayout, QScrollArea, QFrame, QTextEdit
 )
 from PyQt6.QtGui import QColor 
-# Import the refactored label generator code
-## from label_generator_core_v8_refactored_v2 that one works with the inteface before the changes for the background transparent
-from label_generator_core_v8_refactored_v3 import LabelGeneratorSettings, LabelGenerator # OPTION 1 FOR HANDLING TRANSPARENT BUT REALISM MUST BE OFF OK
-#from label_generator_core_v8_refactored_v4 import LabelGeneratorSettings, LabelGenerator ## not working
+
+from label_generator_core import LabelGeneratorSettings, LabelGenerator 
+
 
 
 class UnitSelectionDialog(QDialog):
@@ -1904,3 +1903,4 @@ if __name__ == "__main__":
     window.show()
     sys.exit(app.exec())
   
+
