@@ -14,4 +14,4 @@ Once the environment is created, activate the environment using conda activate e
 
 One can call the GUI using the following command:
 
-python label_core_gui.py
+python label_generator_gui.py
